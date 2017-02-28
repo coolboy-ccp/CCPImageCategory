@@ -13,6 +13,7 @@
 		7EEC355B1E65783300C9AFAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EEC35591E65783300C9AFAA /* Main.storyboard */; };
 		7EEC355D1E65783300C9AFAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EEC355C1E65783300C9AFAA /* Assets.xcassets */; };
 		7EEC35601E65783300C9AFAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EEC355E1E65783300C9AFAA /* LaunchScreen.storyboard */; };
+		7EEC356A1E65789E00C9AFAA /* UIImage+CCPImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35691E65789E00C9AFAA /* UIImage+CCPImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		7EEC355C1E65783300C9AFAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EEC355F1E65783300C9AFAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EEC35611E65783300C9AFAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EEC35681E65789E00C9AFAA /* UIImage+CCPImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CCPImage.h"; sourceTree = "<group>"; };
+		7EEC35691E65789E00C9AFAA /* UIImage+CCPImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CCPImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 		7EEC35441E65783300C9AFAA = {
 			isa = PBXGroup;
 			children = (
+				7EEC35671E65788E00C9AFAA /* ImageExtension */,
 				7EEC354F1E65783300C9AFAA /* CCPImageCategory */,
 				7EEC354E1E65783300C9AFAA /* Products */,
 			);
@@ -77,6 +81,15 @@
 				7EEC35511E65783300C9AFAA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7EEC35671E65788E00C9AFAA /* ImageExtension */ = {
+			isa = PBXGroup;
+			children = (
+				7EEC35681E65789E00C9AFAA /* UIImage+CCPImage.h */,
+				7EEC35691E65789E00C9AFAA /* UIImage+CCPImage.m */,
+			);
+			path = ImageExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +166,7 @@
 			files = (
 				7EEC35581E65783300C9AFAA /* ViewController.m in Sources */,
 				7EEC35551E65783300C9AFAA /* AppDelegate.m in Sources */,
+				7EEC356A1E65789E00C9AFAA /* UIImage+CCPImage.m in Sources */,
 				7EEC35521E65783300C9AFAA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
