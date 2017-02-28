@@ -46,4 +46,39 @@
     UIGraphicsEndImageContext();
     return img;
 }
+
+/*
+ 截取图片的一部分
+ */
+- (UIImage *)clipImageInRect:(CGRect)rect {
+    CGImageRef imgRef = CGImageCreateWithImageInRect(self.CGImage, rect);
+    return [UIImage imageWithCGImage:imgRef];
+}
+
+/*
+ 为图片添加水印(合并两张图片)
+ waterImg:水印图片
+ rect:水印图片rect
+ */
+- (UIImage *)addWatermarkWithImage:(UIImage *)waterImg rect:(CGRect)rect {
+    UIGraphicsBeginImageContext(self.size);
+    [self drawInRect:CGRectMake(0, 0, self.size.width, self.size.height)];
+    [waterImg drawInRect:rect];
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
+}
+
+/*
+ 为图片添加文字
+ text:需要添加的文字
+ font：字体
+ color：颜色
+ rect：文字rect
+ 
+ */
+- (UIImage *)addTextWithString:(NSString *)text font:(UIFont *)font color:(UIColor *)color rect:(CGRect)rect {
+    return nil;
+}
+
 @end
